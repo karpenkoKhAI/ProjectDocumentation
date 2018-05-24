@@ -1,0 +1,21 @@
+ 2  sudo apt-get update -y
+    3  sudo apt-get upgrade -y
+    4  sudo apt-get install docker.io
+    5  sudo usermod -a -G docker $USER
+    6  sudo usermod -a -G root jenkins
+    7  sudo useradd jenkins
+    8  sudo usermod -a -G root jenkins
+    9  sudo usermod -a -G root docker
+   10  sudo reboot
+   11  mkdir jenkins
+   12  pwd
+   13  cd jenkins/
+   14  pwd
+   15  cd ../
+   16  git clone https://github.com/karpenkoKhAI/BlackBoxAnalize.git
+   17  cd BlackBoxAnalize/
+   18  cp agent.jar slave-agent.jnlp ../jenkins/
+   19  cd ../jenkins/
+   20  sudo apt-get install default-jre
+   21  java -jar agent.jar -jnlpUrl http://54.86.192.4:8080/computer/new/slave-agent.jnlp -secret ab9712bb14cd610a0ecd54a55b41b21c7cbec7e7af4a9e25b9dd804b3dbb355a -workDir "/home/ubuntu/jenkins"
+   22  history
