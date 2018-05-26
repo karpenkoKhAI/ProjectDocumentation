@@ -1,0 +1,49 @@
+  base=https://github.com/docker/machine/releases/download/v0.14.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+   45  docker-machine version
+   46  exit
+   47  nano ~/.aws/credentials
+   48  touch ~/.aws/credentials
+   49  ls ~/.aws/credentials
+   50  sudo ls
+   51  sudo nano ~/.aws/credentials
+   52  cd /
+   53  sudo nano ~/.aws/credentials
+   54  sudo touch  ~/.aws/credentials
+   55  touch e
+   56  sudo touch e
+   57  rm e
+   58  sudo rm e
+   59  cd home
+   60  ls
+   61  cd ~
+   62  mkdir .aws
+   63  cd .aws/
+   64  nano credentials
+   65  pwd
+   66  docker-machine create --driver amazonec2 aws-sandbox
+   67  docker-machine ls
+   68  docker-machine rm
+   69  sudo docker-machine rm
+   70  docker-machine ls
+   71  docker-machine create --driver amazonec2 aws-sandbox
+   72  docker-machine create --driver amazonec2 aws-sandbo
+   73  docker run -d -p 8000:80 nginx
+   74  ping 107.22.156.240
+   75  sudo ssh -i "aws-sandbo.pem" ubuntu@ec2-107-22-156-240.compute-1.amazonaws.com
+   76  ls
+   77  docker-machine ls
+   78  docker-machine rm aws-sandbox
+   79  docker-machine rm aws-sandbo
+   80  ls
+   81  docker-machine ls
+   82  docker-machine create --driver amazonec2 aws-sandbox
+   83  docker run -d -p 80:80 nginx
+   84  docker-machine active
+   85  docker-machine ls
+   86  docker run -d -p 80:80 nginx
+   87  docker ps
+   88  eval $(docker-machine env aws-sandbox)
+   89  docker ps
+   90  docker images
+   91  docker-machine env aws-sandbox
+   92  docker run -p 80:80 nginx
