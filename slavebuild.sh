@@ -1,6 +1,8 @@
 #!/bin/bash
-apt-get update -y
-apt-get upgrade -y
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install default-jre -y
 mkdir ~/.aws
 echo "[default]" >> ~/.aws/credentials
 echo "aws_access_key_id = POSHELNAHUI" >> ~/.aws/credentials
